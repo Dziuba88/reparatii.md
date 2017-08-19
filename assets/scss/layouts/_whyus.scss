@@ -1,0 +1,48 @@
+.whyus {
+  padding: 40px 0; 
+  background: #fff url(../img/bg_whyus.jpg) no-repeat center 320px;
+
+  &-wraper {
+    border: 8px solid $c_yellow;
+    padding: 20px;
+  }
+
+  &-item {
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    
+    &__image {
+      width: 140px;
+      height: 140px;
+      position: relative;
+      margin: 0 auto 15px;
+      border: 7px solid $c_blue;
+      padding: 10px;
+
+      img {
+        width: 105px;
+        height: 105px;
+        display: block;
+        transform: perspective(1px) translateZ(0);
+      }
+
+      &:hover img {
+        animation-name: buzz-out;
+        animation-duration: 0.75s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+      }
+
+    }
+
+    &__header {
+      font-size: 28px;
+      line-height: 30px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      min-height: 60px;
+    }
+  }
+}

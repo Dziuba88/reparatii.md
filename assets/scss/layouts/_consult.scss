@@ -1,0 +1,51 @@
+.consult {
+  padding: 0 0 40px;
+  background: url(../img/bg_consult.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+  &-form {
+    .formfield {
+      position: relative;
+      margin-bottom: 20px;
+
+      input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 0 15px 0 30px;
+        font-size: 18px;
+        border: 1px solid #fff;
+        box-shadow: none;
+
+        &[aria-invalid=true] {
+          border: 1px solid #c33;
+        }
+      }
+
+      label {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        line-height: 20px;
+        opacity: .5;
+      }
+
+      &.field-error input {
+        border: 1px solid #c33;
+      }
+    }
+
+    .btn-accent {
+      height: 43px;
+      text-transform: uppercase;
+      
+    }
+  }
+}
+.cerere {
+  padding: 0 0 40px;
+  background: url(../img/bg_cerere.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  
+}

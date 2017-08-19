@@ -1,0 +1,45 @@
+.pluses {
+  background-color: $c_yellow;
+  padding: 40px 0 80px;
+  background-image: url(../img/pluses-top.png), url(../img/pluses-bottom.png), url(../img/blue-lines.png);
+  background-repeat: no-repeat;
+  background-position: top center, bottom center, center center;
+  &-list {
+    &__item {
+      position: relative;
+      padding-left: 80px;
+      margin-bottom: 40px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        width: 55px;
+        height: 55px;
+        border: 5px solid #fff;
+        z-index: 1;
+      }
+      img {
+        display: block;
+        position: absolute;
+        left: 0;
+        padding: 0;
+        z-index: 2;
+
+      }
+
+      h2 {
+        margin: 0 0 20px;
+        font-size: 24px;
+        line-height: 30px;
+        min-height: 60px;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 0 30px;
+      }
+    }
+  }
+}

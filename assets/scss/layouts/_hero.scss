@@ -1,0 +1,77 @@
+.hero {
+  background: url(../img/fp_header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 10px 0 30px;
+  border-bottom: 8px solid $c_blue;
+  text-align: center;
+
+  h1 {
+    margin: 0 0 60px;
+    text-align: center;
+    line-height: 1;
+    background: url(../img/bg_title-fp.png) no-repeat center bottom;
+    padding: 170px 0 115px;
+
+    span {
+      display: inline-block;
+      background-color: $c_yellow;
+      padding: 0px .5em 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &-main {
+    font-size: 64px;
+    font-weight: 900;
+  }
+
+  &-desc {
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  &-slogan {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .scroll-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $c_dark;
+
+    svg {
+      width: 48px;
+      height: 48px;
+      fill: $c_dark;
+      display: block;
+      transition: .3s ease-in-out;
+    }
+
+    span {
+      font-size: 16px;
+      display: block;
+      line-height: 24px;
+    }
+
+    &:hover {
+      color: #fff;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+
+
+}
+
+
+@media #{$mobile-screen} {
+  .hero h1 {
+    background: none;
+    padding: 30px 0 0;
+  }
+  .hero-main {font-size: 36px;}
+  .hero-desc, .hero-slogan {font-size: 28px;}
+}

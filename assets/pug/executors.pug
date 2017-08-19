@@ -1,0 +1,105 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Исполнители'
+block header
+  include inc/header
+block main
+  main.executors-page
+    .executors-page__application
+      .container
+        .row
+          .col.sm-7.md-8
+            select
+              option Выбрать категорию
+              option категория 1
+              option категория 2
+              option категория 3
+              option категория 4
+              option категория 5
+              option категория 6
+              option категория 7
+              option категория 8
+              option категория 9
+          .col.sm-5.md-4
+            button.btn.btn-main.btn-block.popup-form(href="#request") Оставить заявку
+
+    .container
+      .card
+        .card-header
+          img(src="img/avatar.jpg", alt="").executor__avatar
+          .executor__info
+            span.executor__company Victorydesign
+            span.executor__name Виктория
+            span.executor__experience Стаж: 7 лет
+          .executor__contact
+            i.fa.fa-phone
+            span 060 400 017
+        .card-body
+          .executor__description
+            .executor__description-title Категории работ:
+            .executor__description-text Разбивка стен и полов, согласно проекту; Кладка стен, согласно проекту; Установка систем отопления, водоснабжения и канализации; Выравнивание стен, потолков и откосов 
+          .executor__description
+            .executor__description-title Описание:
+            .executor__description-text Опыт 7 лет в области дизайна интерьера, декорирования недвижимости, планирования территории, 5 лет в области ремонта и строительства. Предлагаем виды ремонта: стандарт, комфорт, капитальный и индивидуальный.
+          .executor__description
+            .executor__description-title Примеры работ:
+            .executor__description-portfolio
+              ul.popup-gallery
+                li: a(href="https://unsplash.it/1280/1024?image=0"): img(src="https://unsplash.it/60/60?image=0", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=1"): img(src="https://unsplash.it/60/60?image=1", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=2"): img(src="https://unsplash.it/60/60?image=2", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=3"): img(src="https://unsplash.it/60/60?image=3", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=4"): img(src="https://unsplash.it/60/60?image=4", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=5"): img(src="https://unsplash.it/60/60?image=5", alt="")
+      .card
+        .card-header
+          img(src="img/avatar.jpg", alt="").executor__avatar
+          .executor__info
+            span.executor__company Reparatii.md
+          .executor__contact
+            i.fa.fa-phone
+            span 060 400 017
+        .card-body
+          .executor__description
+            .executor__description-title Категории работ:
+            .executor__description-text Выравнивание полов; Подготовка горизонтальных и вертикальных поверхностей; Установка плитки; Подготовка стен и потолков; Установка паркета и ламината
+          .executor__description
+            .executor__description-title Описание:
+            .executor__description-text Мы предоставляем услуги по ремонту и отделке различных помещений. Типы ремонта: стандарт (50 Euro/ m2), комфорт (70 Euro/ m2), капитальный (90 Euro/ m2) и индивидуальный (110 Euro/ m2). Также же вы можете заказать у нас дизайн интерьера. Стоимость дизайна от 5euro /m² до 15euro /m² в зависимости от пакета и стиля дизайна.
+          .executor__description
+            .executor__description-title Примеры работ:
+            .executor__description-portfolio
+              ul.popup-gallery
+                li: a(href="https://unsplash.it/1280/1024?image=0"): img(src="https://unsplash.it/60/60?image=0", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=1"): img(src="https://unsplash.it/60/60?image=1", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=2"): img(src="https://unsplash.it/60/60?image=2", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=3"): img(src="https://unsplash.it/60/60?image=3", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=4"): img(src="https://unsplash.it/60/60?image=4", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=5"): img(src="https://unsplash.it/60/60?image=5", alt="")
+      .card
+        .card-header
+          img(src="img/avatar.jpg", alt="").executor__avatar
+          .executor__info
+            span.executor__company Victorydesign
+            span.executor__name Виктория
+            span.executor__experience Стаж: 7 лет
+          .executor__contact
+            i.fa.fa-phone
+            span 060 400 017
+        .card-body
+          .executor__description
+            .executor__description-title Категории работ:
+            .executor__description-text Разбивка стен и полов, согласно проекту; Кладка стен, согласно проекту; Установка систем отопления, водоснабжения и канализации; Выравнивание стен, потолков и откосов 
+          .executor__description
+            .executor__description-title Описание:
+            .executor__description-text Опыт 7 лет в области дизайна интерьера, декорирования недвижимости, планирования территории, 5 лет в области ремонта и строительства. Предлагаем виды ремонта: стандарт, комфорт, капитальный и индивидуальный.
+          .executor__description
+            .executor__description-title Примеры работ:
+            .executor__description-portfolio
+              ul.popup-gallery
+                li: a(href="https://unsplash.it/1280/1024?image=0"): img(src="https://unsplash.it/60/60?image=0", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=1"): img(src="https://unsplash.it/60/60?image=1", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=2"): img(src="https://unsplash.it/60/60?image=2", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=3"): img(src="https://unsplash.it/60/60?image=3", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=4"): img(src="https://unsplash.it/60/60?image=4", alt="")
+                li: a(href="https://unsplash.it/1280/1024?image=5"): img(src="https://unsplash.it/60/60?image=5", alt="")

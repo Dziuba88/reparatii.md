@@ -1,0 +1,31 @@
+// VARIABLES 
+@import "variables";
+// NORMALIZE 
+@import "includes/normalize";
+// BASE STYLES 
+@import "includes/fonts";
+@import "includes/grid";
+@import "includes/typography";
+@import "includes/animations";
+@import "includes/select";
+@import "includes/carousel";
+@import "includes/magnific";
+
+
+// LAYOUTS 
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/executors";
+@import "layouts/forum";
+@import "layouts/hero";
+@import "layouts/services";
+@import "layouts/portfolio";
+@import "layouts/pluses";
+@import "layouts/whyus";
+@import "layouts/consult";
+@import "layouts/counters";
+@import "layouts/testimonials";
+@import "layouts/scheme";
+@import "layouts/cabibet";
+@import "layouts/modals";
+

@@ -1,0 +1,333 @@
+body {
+  font-family:  'BlissPro', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: $c_dark;
+
+  &.inside-page {
+    background: #eef4f4 url(../img/bg_inside.jpg) no-repeat center 300px;
+    border-top: 4px solid $c_blue;  
+  }
+  
+}
+
+
+
+a, button {
+  transition: .3s ease-in-out;
+}
+
+
+
+::-webkit-input-placeholder {color:$c_dark; opacity: 1;transition: $transition;}
+::-moz-placeholder          {color:$c_dark; opacity: 1;transition: $transition;}/* Firefox 19+ */
+:-moz-placeholder           {color:$c_dark; opacity: 1;transition: $transition;}/* Firefox 18- */
+:-ms-input-placeholder      {color:$c_dark; opacity: 1;transition: $transition;}
+
+
+:focus::-webkit-input-placeholder {color: transparent !important}
+:focus::-moz-placeholder          {color: transparent !important}
+:focus:-moz-placeholder           {color: transparent !important}
+:focus:-ms-input-placeholder      {color: transparent !important}
+
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+  transform: perspective(1px) translateZ(0);
+
+  &:hover {
+        animation-name: buzz-out;
+        animation-duration: 0.75s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+  }
+
+  &-block {
+    width: 100%;
+    display: flex;
+  }
+
+  &-lang {
+    font-size: 14px;
+    background-color: #fff;
+    color: $c_dark;
+    border: 2px solid $c_dark;
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+
+
+    &:hover {
+      background-color: $c_dark;
+      color: #fff;
+    }
+  }
+
+  &-main {
+    font-size: 16px;
+    background-color: $c_blue;
+    color: #fff;
+    border-bottom: 3px solid $c_cyan;
+
+    &:hover {
+      background-color: $c_cyan;
+    }
+  }
+
+  &-outline {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #fff;
+    color:  $c_cyan;
+    border: 1px solid $c_cyan;
+    padding: 10px 15px;
+
+
+    &:hover {
+      background-color: $c_cyan;
+      color:  #fff;
+    }
+  }
+
+  &-accent {
+    font-size: 16px;
+    background-color: $c_yellow;
+    color: $c_dark;
+    border-bottom: 3px solid $c_orange;
+
+    &:hover {
+      background-color: $c_orange;
+    }
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.card {
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba($c_dark, .3);
+  background-color: #ffffff;
+  overflow: hidden;  
+  &-header {
+    background-color: $c_dark;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+
+  }
+
+  &-body {
+    border-radius: 0 0 5px 5px;
+    padding: 30px 30px 10px;
+    
+  }
+
+  &-controls {
+    padding: 0 120px;
+  }
+
+}
+
+
+.section-header {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 58px;
+  line-height: 1;
+  margin: 0 0 60px;
+  position: relative;
+  padding-top: 30px;
+
+  &:before {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 30px;
+    height: 8px;
+    background-color: $c_blue;
+    content: '';
+    margin-left: -15px;
+  }
+
+  span {
+    display: block;
+  }
+  small {
+    display: block;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 42px;
+  }
+}
+
+
+.section-header2 {
+  background: url(../img/bg_title-2.png) no-repeat center bottom;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 58px;
+  line-height: 1;
+  margin: 0 0 60px;
+  color: $c_dark;
+  padding: 60px 0;
+
+  span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+
+  small {
+    display: inline-block;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 42px;
+    background-color: #fff;
+    padding: 0 10px 5px;
+  }
+}
+.section-header3 {
+  background: url(../img/bg_title-3.png) no-repeat center bottom;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 58px;
+  line-height: 1;
+  margin: 0 0 60px;
+  color: $c_dark;
+  padding: 60px 0;
+
+  span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+
+    &.light {
+      display: block;
+      background-color: transparent;
+      text-transform: none;
+      font-size: 42px;
+      font-weight: 400;
+    }
+  }
+
+  small {
+    display: inline-block;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 42px;
+    background-color: #fff;
+    padding: 0 10px 5px;
+  }
+}
+
+.collapse {
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: .35s ease-in-out;
+
+  
+  &.in {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  li {
+    display: block;
+    margin: 0;
+
+    a, span {
+      display: block;
+      border: 1px solid #dddddd;
+      border-left: none;
+      padding: 11px 0 9px;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      width: 40px;
+      text-decoration: none;
+      color: $c_cyan;
+      user-select: none;
+
+      &:hover {
+        background-color: #f5f5f5;  
+      }
+    }
+
+    &:first-child {
+      a, span {
+        border-radius: 3px 0 0 3px;
+        border-left: 1px solid #dddddd;
+      }
+    }
+    &:last-child {
+      a, span {
+        border-radius: 0 3px 3px 0
+      }
+    }
+
+    &.active a {
+      background-color: #f5f5f5;
+      color: $c_light;
+    }
+    &.disabled a, &.disabled span {
+      background-color: #fff;
+      color: $c_light;
+      cursor: default;
+    }
+  }
+}
+
+@media #{$mobile-screen} {
+  .section-header, .section-header2, .section-header3 {
+    font-size: 36px;
+    background: none;
+    padding-bottom: 0;
+
+    small {
+      font-size: 24px;
+    } 
+  }
+
+  .card-header {
+    position: relative;
+    padding-bottom: 50px;
+  }
+}

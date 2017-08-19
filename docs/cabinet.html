@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REPARATII.MD | Форум</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body class="inside-page">
+    <!-- Header -->
+    <header class="header-default">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-header"><a class="navbar-header__brand" href="index.html"><img src="img/logo.png" alt=""></a>
+            <button class="navbar__toggle"><i class="fa fa-bars"></i></button>
+          </div>
+          <div class="navbar-content">
+            <nav class="navbar-content__left">
+              <ul>
+                <li><a href="index.html" title="Главная">Главная</a></li>
+                <li><a href="executors.html" title="Исполнители">Исполнители</a></li>
+                <li><a class="active" href="forum.html" title="Форум">Форум</a></li>
+              </ul>
+            </nav>
+            <nav class="navbar-content__right"><a class="navbar-user" href="cabinet.html"><img class="navbar-user__avatar" src="img/avatar.jpg" alt=""><span class="navbar-user__name">Константин Константинопольский</span></a>
+              <button class="btn btn-main">Выйти</button>
+              <button class="btn btn-lang">RU</button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Main Content -->
+    <main class="cabinet-page">
+      <div class="container">
+        <form class="validate-form">
+          <div class="card cabinet">
+            <div class="card-header">
+              <div class="cabinet-user">
+                <div class="row">
+                  <div class="col sm-2">
+                    <div class="cabinet-user__image"><img src="img/avatar.jpg" alt="">
+                      <div class="edit">
+                        <input type="file" id="avatar">
+                        <label for="avatar"><i class="fa fa-pencil"></i></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col sm-10">
+                    <div class="cabinet-user__row accent">
+                      <input type="text" value="Bauingenieur" required name="company" id="company">
+                      <label for="company">Название компании</label>
+                    </div>
+                    <div class="cabinet-user__row">
+                      <input type="text" value="Роман" required name="name" id="name">
+                      <label for="name">Контактное лицо</label>
+                    </div>
+                    <div class="cabinet-user__row">
+                      <input type="text" value="7 лет" required name="standing" id="standing">
+                      <label for="standing">Стаж</label>
+                    </div>
+                    <div class="cabinet-user__row">
+                      <input type="tel" value="062 058 887" required name="phone" id="phone">
+                      <label for="phone">Контактный телефон</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="cabinet-info">
+                <div class="cabinet-info__title">Категории работ: </div>
+                <div class="cabinet-info__content">
+                  <p><span>Монтаж гипс-картона; </span><span>Установка теплого пола в сан. узлах; </span><span>Нанесение декоративной штукатурки; </span><span>Перевозка материалов и вынос мусора; </span><span>Поддержка в процессе выбора и покупки материалов</span></p>
+                  <p>
+                    <button class="btn btn-outline popup-form" href="#categories">+ Добавить категорию</button>
+                  </p>
+                </div>
+              </div>
+              <div class="cabinet-info">
+                <div class="cabinet-info__title">Описание: </div>
+                <div class="cabinet-info__content">
+                  <textarea id="description" name="description" cols="30" rows="10"> Опыт в качестве дипломированного инженера  2 года в Проектном Бюро "Statica cladirilor" (Statikbüro – Nüremberg), 5 лет в градостроительстве ( 11 жилых комплексов). 
+ 
+Виды работ: 4 вида ремонта (косметический, капитальный, комфорт и премиум). 
+  •   Теплоизоляция фасадов; 
+  •   Планирование территории; 
+  •   Системы гидро и тепло изоляции; 
+  •   реконструкция и укрепление зданий.</textarea>
+                </div>
+              </div>
+              <div class="cabinet-info">
+                <div class="cabinet-info__title">Примеры работ:</div>
+                <div class="cabinet-info__content">
+                  <ul class="portfolio">
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=0" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=1" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=2" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=3" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=4" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=5" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=6" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=7" alt=""></a></li>
+                    <li><a href=""><img src="https://unsplash.it/100/100?image=8" alt=""></a></li>
+                    <li class="edit">
+                      <input type="file" id="additem">
+                      <label for="additem"><i class="fa fa-plus"></i></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cabinet-info">
+                <div class="cabinet-info__title"></div>
+                <div class="cabinet-info__content">
+                  <button class="btn btn-main">Сохранить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- End Main Content -->
+    <!-- Footer -->
+    <footer class="footer-default">
+      <div class="container">
+        <p>Sau puteti să sunati pe acest număr</p>
+        <p><a href="tel:+37360888533">+ 373 60 888 533</a></p>
+        <ul class="social">
+          <li><a href=""><img src="img/fb.png" alt=""></a></li>
+          <li><a href=""><img src="img/od.png" alt=""></a></li>
+          <li><a href=""><img src="img/in.png" alt=""></a></li>
+        </ul>
+      </div>
+    </footer>
+    <footer class="footer-fixed"><span>+ 373 60 888 533</span>
+      <button class="btn btn-accent popup-form" href="#sunet">Заказать консультацию</button>
+    </footer>
+    <!-- End Footer -->
+    <!-- Modals-->
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="login">
+      <h1>Авторизация</h1>
+      <form class="dialog-form validate-form" action="">
+        <div class="input-row">
+          <input type="email" required placeholder="E-mail" name="login-email" id="login-email">
+        </div>
+        <div class="input-row">
+          <input type="password" required placeholder="Пароль" name="login-pass" id="login-pass">
+        </div>
+        <div class="input-row">
+          <button class="btn btn-accent btn-block">Войти</button>
+        </div><a class="popup-form" href="#recovery">Забыли пароль?</a>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="recovery">
+      <h1>Восстановление пароля</h1>
+      <form class="dialog-form validate-form" action="">
+        <div class="input-row">
+          <input type="email" required placeholder="E-mail" name="recovery-email" id="recovery-email">
+        </div>
+        <div class="input-row">
+          <button class="btn btn-accent btn-block">Восстановить пароль</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="registration">
+      <h1>Регистрация</h1>
+      <form class="dialog-form validate-form" action="">
+        <div class="input-row">
+          <div class="radio-tabs">
+            <input type="radio" name="type" checked id="registration-type-1">
+            <label for="registration-type-1">Исполнитель</label>
+            <input type="radio" name="type" id="registration-type-2">
+            <label for="registration-type-2"> Заказчик      </label>
+          </div>
+        </div>
+        <div class="input-row">
+          <input type="email" required placeholder="E-mail" name="registration-email" id="registration-email">
+        </div>
+        <div class="input-row">
+          <input type="password" required placeholder="Пароль" name="registration-pass" id="registration-pass">
+        </div>
+        <div class="input-row">
+          <button class="btn btn-accent btn-block">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="request">
+      <h1>Заявка исполнителям</h1>
+      <form class="dialog-form validate-form" action="">
+        <div class="input-row">
+          <input type="email" required placeholder="E-mail" name="request-email" id="request-email">
+        </div>
+        <div class="input-row">
+          <input type="tel" required placeholder="Телефон" name="request-phone" id="request-phone">
+        </div>
+        <div class="input-row">
+          <select>
+            <option>Выбрать категорию</option>
+            <option>категория 1</option>
+            <option>категория 2</option>
+            <option>категория 3</option>
+            <option>категория 4</option>
+            <option>категория 5</option>
+            <option>категория 6</option>
+            <option>категория 7</option>
+            <option>категория 8</option>
+            <option>категория 9</option>
+          </select>
+        </div>
+        <div class="input-row">
+          <textarea name="request-message" cols="30" rows="10" required placeholder="Описание работы:" id="request-message"></textarea>
+        </div>
+        <div class="input-row">
+          <button class="btn btn-accent btn-block">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="sunet">
+      <h1>Comandă un sunet</h1>
+      <p><i class="fa fa-hourglass-2"></i><span>Răspuns in 15 minute</span></p>
+      <form class="dialog-form validate-form" action="">
+        <div class="input-row">
+          <input type="text" required placeholder="Numele" name="sunet-name" id="sunet-name">
+        </div>
+        <div class="input-row">
+          <input type="tel" required placeholder="Numărul de telefon" name="sunet-phone" id="sunet-phone">
+        </div>
+        <div class="input-row">
+          <button class="btn btn-accent btn-block">Comandă un sunet</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="categories">
+      <h1>Категории работ</h1>
+      <form class="dialog-form validate-form" action="">
+        <div class="input-row">
+          <div class="checkbox">
+            <input type="checkbox" id="cat-1">
+            <label for="cat-1">Гарантия на выполненные работы – 3 года</label>
+          </div>
+        </div>
+        <div class="input-row">
+          <button class="btn btn-accent btn-block">Comandă un sunet</button>
+        </div>
+      </form>
+    </div>
+    <!-- End Modals -->
+    <!-- Base Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

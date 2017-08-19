@@ -1,0 +1,86 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Форум'
+block header
+  include inc/header2
+block main
+  main.forum-page.single
+    .container
+      .card.forum-item
+        .card-header
+          img(src="img/avatar.jpg", alt="").autor__avatar
+          .forum-item__info
+            span.forum-item__time 
+              span 22.05.2017
+              span 10:55
+            span.forum-item__autor Константин Константинопольский
+          .forum-item__comments
+            i.fa.fa-comment
+            span 5 ответов
+        .card-body
+          .forum-item__question
+            h1 Дизайн-проект
+            p Планирую начать ремонт квартиры в новом доме, обязателен ли дизайн-проект? Что включает в себя дизайн-проект? Сколько стоит и на какие сроки ориентироваться?
+          .forum-item__responses
+            .response-item
+              a(href="").response-item__avatar: img(src="img/avatar.jpg", alt="")
+              .response-item__header
+                span.response-item__time 
+                  span 22.05.2017
+                  span 10:55
+                span.response-item__autor Константин Константинопольский
+              .response-item__body
+                p Опираясь на наш многолетний опыт, мы с уверенностью заявляем, что дизайн-проект нужен ЛЮБОМУ ремонту.  
+                #more1.collapse
+                  p Неважно, делаете ли вы перепланировку или просто косметический ремонт, неважно, большой или ограниченный бюджет на ремонт – в любом случае дизайн-проект будет очень полезен.
+                a(href="#more1" data-toggle="collapse" data-toggle-secondary="Скрыть") Подробнее
+            .response-item
+              a(href="").response-item__avatar: img(src="img/avatar.jpg", alt="")
+              .response-item__header
+                span.response-item__time 
+                  span 22.05.2017
+                  span 10:55
+                span.response-item__autor Константин Константинопольский
+              .response-item__body
+                p Акцентируется не красота садовой дорожки
+            .response-item
+              a(href="").response-item__avatar: img(src="img/avatar.jpg", alt="")
+              .response-item__header
+                span.response-item__time 
+                  span 22.05.2017
+                  span 10:55
+                span.response-item__autor Константин Константинопольский
+              .response-item__body
+                p Акцентируется не красота садовой дорожки, а фотоиндуцированный энергетический перенос конвенционален. Мишень закономерна. Коралловый риф, как неоднократно наблюдалось при постоянном воздействии ультрафиолетового облучения, немагнитен. Под воздействием переменного напряжения электронная пара возможна.  
+                #more3.collapse
+                  p Акцентируется не красота садовой дорожки, а фотоиндуцированный энергетический перенос конвенционален. Мишень закономерна. Коралловый риф, как неоднократно наблюдалось при постоянном воздействии ультрафиолетового облучения, немагнитен. Под воздействием переменного напряжения электронная пара возможна.
+                  p Акцентируется не красота садовой дорожки, а фотоиндуцированный энергетический перенос конвенционален. Мишень закономерна. Коралловый риф, как неоднократно наблюдалось при постоянном воздействии ультрафиолетового облучения, немагнитен. Под воздействием переменного напряжения электронная пара возможна.
+                a(href="#more3" data-toggle="collapse" data-toggle-secondary="Скрыть") Подробнее
+            .response-item
+              a(href="").response-item__avatar: img(src="img/avatar.jpg", alt="")
+              .response-item__header
+                span.response-item__time 
+                  span 22.05.2017
+                  span 10:55
+                span.response-item__autor Константин Константинопольский
+              .response-item__body
+                p Акцентируется не красота садовой дорожки
+
+        .card-controls
+          nav
+            ul.pagination
+              li.disabled: span «
+              li.active: a(href='#') 1
+              li: a(href='#') 2
+              li: a(href='#') 3
+              li: a(href='#') 4
+              li: a(href='#') 5
+              li: a(href='#') »
+
+        .forum-item__response
+          h1 Оставить ответ
+          form.forum-item__response-form(action="")
+            a(href="").response-item__avatar: img(src="img/avatar.jpg", alt="")
+            textarea(name="", cols="30", rows="10")
+            .forum-item__response-form__controls
+              button.btn.btn-main Ответить

@@ -1,0 +1,294 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Главная'
+block header
+  include inc/header
+block main
+  section.hero
+    .container
+      h1
+        span.hero-main(data-aos="fade-right") REPARATIA
+        span.hero-desc(data-aos="fade-left") apartamentelor, caselor și oficiilor
+        span.hero-slogan(data-aos="fade-right") Facem viata Dvs mai confortabilă
+
+      a(href="#anchor").scroll-link
+        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.5 477.5")
+          path(d="M288.75 82.5h-100c-53.76 0-97.5 43.74-97.5 97.5v200c0 53.76 43.74 97.5 97.5 97.5h100c53.76 0 97.5-43.74 97.5-97.5V180c0-53.76-43.74-97.5-97.5-97.5zM106.25 180c0-45.5 37-82.5 82.5-82.5h42.5v115h-125V180zm265 200c0 45.5-37 82.5-82.5 82.5h-100c-45.5 0-82.5-37-82.5-82.5V227.5h265V380zm0-167.5h-125v-115h42.5c45.5 0 82.5 37 82.5 82.5v32.5zm-125-172.4c.13-2.6 1.44-2.6 2.5-2.6h60c7.03 0 17.5-4.66 17.5-17.5V0h-15v20c0 1.06 0 2.37-2.6 2.5h-59.9c-12.84 0-17.5 10.46-17.5 17.5v30h15V40.1z")
+        span rulează
+  section.services#anchor
+    .container
+      h2.section-header
+        span(data-aos="fade-right") 4 TIPURI DE REPARATII
+        small(data-aos="fade-left") care le puteti comanda la noi
+      .services-list
+        .row
+          .col.sm-6
+            .services-list__item
+              a(href=""): img(src="https://unsplash.it/160/160?image=1", alt="")
+              h2 Reparatie cosmetică
+              p de la 50 euro pentru m2
+              button.btn.btn-main.popup-form(href="#sunet") Comandă un sunet
+          .col.sm-6
+            .services-list__item
+              a(href=""): img(src="https://unsplash.it/160/160?image=2", alt="")
+              h2 Reparatie capitală
+              p de la 70 euro pentru m2
+              button.btn.btn-main.popup-form(href="#sunet") Comandă un sunet
+          .col.sm-6
+            .services-list__item
+              a(href=""): img(src="https://unsplash.it/160/160?image=3", alt="")
+              h2 Reparatie<br>euro
+              p de la 90 euro pentru m2
+              button.btn.btn-main.popup-form(href="#sunet") Comandă un sunet
+          .col.sm-6
+            .services-list__item
+              a(href=""): img(src="https://unsplash.it/160/160?image=4", alt="")
+              h2 Reparatie Premium
+              p de la 110 euro pentru m2
+              button.btn.btn-main.popup-form(href="#sunet") Comandă un sunet
+  section.portfolio
+    .container
+      h2.section-header
+        span(data-aos="fade-right") proiecte
+        small(data-aos="fade-left") realizate de noi
+      .portfolio-slider.owl-carousel
+        - for (var i=1; i<=10; i++)
+          .portfolio-slider__item
+            .portfolio-slider__item-header= 'Proiect #'+i
+            .portfolio-slider__item-body
+              .row
+                .col.sm-8: a(href="https://unsplash.it/1920/1080?image=1"+i).portfolio-slider__item-thumb.popup-image: img(src="https://unsplash.it/520/358?image=1"+i, alt="")
+                .col.sm-4
+                  a(href="https://unsplash.it/1920/1080?image=2"+i).portfolio-slider__item-thumb.popup-image: img(src="https://unsplash.it/520/355?image=2"+i, alt="")
+                  a(href="https://unsplash.it/1920/1080?image=3"+i).portfolio-slider__item-thumb.popup-image: img(src="https://unsplash.it/520/355?image=3"+i, alt="")
+            .portfolio-slider__item-footer
+              h4 Detalii proiectului
+              p Apartament cu 2 camere. Euro reparatie - 60 m2.
+  section.pluses
+    .container
+      h2.section-header
+        span(data-aos="fade-right") 5 frici
+        small(data-aos="fade-left") de care vă protejăm
+      .pluses-list
+        .row
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/minus.png", alt="")
+              h2 Să achiti mai mult, după semnarea contractului
+              p Ca regulă, după semnarea contractului și în procesul de reparatie, costul final crește de mai multe ori, formând o gaură în bugetul dumneavoastră.
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/plus.png", alt="")
+              h2 Nu sunt costuri suplimentare!
+              p Cu noi nu trebuie să plătiti mai mult decât este scris în estimare. Noi pretuim onestitate în relatiile cu clientii noștri.
+        .row
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/minus.png", alt="")
+              h2 Amânarea dării in exploatarea a obiectului
+              p Una dintre cele mai frecvente probleme cu care se confruntă majoritatea clientilor - întârziere finalizării obiectului.
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/plus.png", alt="")
+              h2 Vă garantăm 100% respectarea termenilor
+              p Noi apreciem timpul Dvs, așa ca garantăm 100% respectarea termenilor.
+        .row
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/minus.png", alt="")
+              h2 Calitatea proastă a lucrărilor
+              p Pentru a face economii pe salariile angajatilor, multe companii atrag muncitori necalificati. Acest lucru afectează în mod direct calitatea muncii efectuate.
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/plus.png", alt="")
+              h2 Specialiști cu experientă de peste 5 ani
+              p În compania noastră lucrează specialiști cu experienta de peste 5 ani. Vă garantăm calitatea serviciilor.
+        .row
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/minus.png", alt="")
+              h2 E prea scump!
+              p Multe companii manipulează preturile din cauza ne-informării clientilor, exagerând preturile reale.
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/plus.png", alt="")
+              h2 Preturile noastre sunt transparente
+              p Avem parteneriate și reduceri de la companii de aceea avem preturi mai mici la materiale.
+        .row
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/minus.png", alt="")
+              h2 Cer avans și apoi dispar
+              p De multe ori se întâlnesc cazuri cînd companiile iau avans și dispar.
+          .col.sm-6
+            .pluses-list__item
+              img(src="img/plus.png", alt="")
+              h2 Oferim 2 ani garantie
+              p Noi vă oferim garantie pînă la 2 ani la toate lucrările efectuate.
+  section.whyus
+    .container
+      h2.section-header
+        span(data-aos="fade-right") REPARATIA CU NOI
+        small(data-aos="fade-left") e mai simplă.
+      .row
+        .col.md-10.offset-md-1
+          .whyus-wraper
+            .row
+              .col.sm-6
+                .whyus-item
+                  .whyus-item__image: img(src="img/engineer.png", alt="") 
+                  .whyus-item__header Consultatie gratuită a inginerului
+                  .whyus-item__text Stabilirea bugetului și consultarea gratuită.
+              .col.sm-6
+                .whyus-item
+                  .whyus-item__image: img(src="img/time-passing.png", alt="") 
+                  .whyus-item__header Termeni 30-50 de zile
+                  .whyus-item__text Executăm toate lucrările în 30-50 de zile.
+            .row
+              .col.sm-6
+                .whyus-item
+                  .whyus-item__image: img(src="img/get-money.png", alt="") 
+                  .whyus-item__header Materialul la preturi en-gros
+                  .whyus-item__text Având un număr mare de clienti avem posibilitatea de a cumpăra materiale la pret en-gros special pentru Dvs.
+              .col.sm-6
+                .whyus-item
+                  .whyus-item__image: img(src="img/drawing.png", alt="") 
+                  .whyus-item__header Control al calitătii
+                  .whyus-item__text In fiecare zi, toate lucrările sunt controlate de către maistru.
+
+  section.consult
+    .container
+      h2.section-header2
+        span(data-aos="fade-right") COMANDĂ
+        small(data-aos="fade-left") o consultare gratuită a specialistului
+      .row
+        .col.md-10.offset-md-1
+          form.consult-form.validate-form
+            .row
+              .col.sm-4
+                .formfield
+                  input(name="f1-name" type="text" placeholder="Numele Dvs" required)#f1-name
+                  label(for="f1-name"): i.fa.fa-user
+              .col.sm-4
+                .formfield
+                  input(name="f1-phone" type="tel" placeholder="Telefonul Dvs" required)#f1-phone
+                  label(for="f1-phone"): i.fa.fa-phone
+              .col.sm-4: button.btn.btn-accent.btn-block(type="submit") Trimite-ti
+
+
+  section.testimonials
+    .container
+      h2.section-header
+        span(data-aos="fade-right") TESTIMONIALE
+        small(data-aos="fade-left") clientilor noștri
+      .testimonials-slider.owl-carousel
+        .testimonials-slider__item
+          p Am comandat reparatie la cheie in apartament cu 2 camere la Botanica. Au pregătit un proiect de design interesant, pe care noi am aprobat din prima oară. Pretul pe mine a aranjat: nu este scump, și nu este ieftin – ca să spunem așa, pretul optim. Au făcut totul bine și cel mai important pentru noi - in timp. Recomand.
+          .author
+            img(src="img/ivan-crop-u11670.jpg", alt="")
+            span Ion
+        .testimonials-slider__item
+          p Vreau să multumesc întreaga echipa și mai ales pe Arcadie pentru profesionalism.  În Moldova e greu de întâlnit astfel echipe de constructii, care sunt cinstiti cu clienti. Am vrut să actualizez interior și să fac reparatia cosmetică. Pret părea destul de rezonabil, dar mi-a fost frica că costul final va fi mult mai mare decît am semnat in contract. Am fost plăcut surprinsă cînd am plătit chiar mai putin, decît era scris in estimare. Calitatea reparatiei - excelentă. Pe deplin satisfăcută. Vă multumesc foarte mult!
+          .author
+            img(src="img/svetlana-crop-u11677.jpg", alt="")
+            span Marina
+        .testimonials-slider__item
+          p Noi am actualizat baie și toaletă. Au făcut totul repede, au agătat oglindă un pic pieziș, dar la prima solicitare totul au corectat. Am 8 ani de experientă in domeniul constructiilor, deci totul am evaluat meticulos. Maistru - un profesionist adevărat. Angajatii erau îngrijiti, totul au spălat și au scos gunoi după dânșii. A rămas o experienta foarte plăcută de cooperare.
+          .author
+            img(src="img/dmitri-crop-u11684.jpg", alt="")
+            span Dumitru
+        .testimonials-slider__item
+          p O companie bună. Ei încă au renovat apartamentul nostru. Acum, facem casa în suburbii, și tot ne-am apelat la aceeași băieţi. De data aceasta, au lucrat mai curat și mai repede decît data trecută. Sunt bravo, se pare că din greșeli învaţă repede. Calitatea muncii este foarte bună, totul au făcut in mod corespunzător. Declar multumire. Planificăm să facem reparatie euro la apartamentul nou pentru fiica, atunci cînd ea se întoarce din Italia. Se va aplica la ei.
+          .author
+            img(src="img/marina-crop-u11691.jpg", alt="")
+            span Daniela
+        .testimonials-slider__item
+          p Părintii la nunta ne-a cadonat un apartament in clădirea nouă. Desigur, noi am știut despre asta dinainte și am căutat companie, care o să încarneze calitativ ideile sotiei mele privind aranjamentul casei noastre. Sotia mea este un designer. După lungă căutare, am ales reparatii.md, la sfatul unui prieten care a avut o experientă de cooperare cu ei. Băieţi - sunt bravo! Sunt foarte răbdători). Sotia de multe ori a schimbat dorintile şi ideile în procesul de renovare, dar băietii au reactionat cu înţelegere.  În general, eu recomand tuturor celor care au nevoie de o reparatie de calitate.
+          .author
+            img(src="img/o36icapenkm-crop-u11698.jpg", alt="")
+            span Stanislav
+
+  section.counters
+    .container
+      .row
+        .col.sm-4
+          img(src="img/home.png", alt="")
+          .counter 219
+          span proiecte realizate
+        .col.sm-4
+          img(src="img/users.png", alt="")
+          .counter 184
+          span clienti satisfăcuti
+        .col.sm-4
+          img(src="img/home.png", alt="")
+          .counter 7
+          span ani in domeniul serviciilor de constructii
+  section.cerere
+    .container
+      h2.section-header3
+        span.light(data-aos="fade-left") VREI
+        span(data-aos="fade-right") REPARAtIA VISELOR TALE?
+        small(data-aos="fade-left") Lăsati cererea, iar noi vă vom face o oferta<br>pe care nu o să puteti refuza.
+      button.btn.btn.btn-main.popup-form(href="#sunet") Vreu reparatia viselor mele
+  section.scheme
+    .container
+      h2.section-header
+        span(data-aos="fade-right") SCHEMA DE LUCRU
+
+      .row
+        .col.md-10.offset-md-1
+          .scheme-steps
+            .step(data-aos="fade-zoom-in")
+              .step__thumb
+                small 01
+                img(src="img/phone.png", alt="")
+              .step__text
+                button.btn.btn.btn-main.popup-form(href="#sunet") Comanda Dvs
+                p Lăsati o cerere pe site-ul nostru, iar specialistul nostru vă va contacta în termen de 1 zi lucrătoare, cu scopul de a clarifica detaliile și a stabili o întâlnire.
+            .step(data-aos="fade-zoom-in")
+              .step__thumb
+                small 02
+                img(src="img/om.png", alt="")
+              .step__text
+                h3 Vizita specialistului
+                p La timpul stabilit specialistul vine la Dvs şi face toate calculule necesare.
+            .step(data-aos="fade-zoom-in")
+              .step__thumb
+                small 03
+                img(src="img/smeta.png", alt="")
+              .step__text
+                h3 Estimare și contract
+                p Lăsati o cerere pe site-ul nostru, iar specialistul nostru vă va contacta în termen de 1 zi lucrătoare, cu scopul de a clarifica detaliile și a stabili o întâlnire.
+            .step(data-aos="fade-zoom-in")
+              .step__thumb
+                small 04
+                img(src="img/rabot.png", alt="")
+              .step__text
+                h3 Executarea lucrărilor
+                p Lucrătorii noștri în timp stabilit efectuează toate lucrările în conformitate cu bugetul aprobat.
+            .step(data-aos="fade-zoom-in")
+              .step__thumb
+                small 05
+                img(src="img/miina.png", alt="")
+              .step__text
+                h3 Primirea lucrului
+                p Dvs primiti lucru și evaluati rezultatele. Dacă este necesar, finalizăm reparatii în acordare cu Dvs.
+  section.consult
+    .container
+      h2.section-header2
+        span(data-aos="fade-right") aveti întrebări?
+        small(data-aos="fade-left") lăsati cererea și noi vă contactăm
+      .row
+        .col.md-10.offset-md-1
+          form#id1.consult-form.validate-form
+            .row
+              .col.sm-4
+                .formfield
+                  input(name="f2-name" type="text" placeholder="Numele Dvs" required)#f2-name
+                  label(for="f2-name"): i.fa.fa-user
+              .col.sm-4
+                .formfield
+                  input(name="f2-phone" type="tel" placeholder="Telefonul Dvs" required)#f2-phone
+                  label(for="f2-phone"): i.fa.fa-phone
+              .col.sm-4: button.btn.btn-accent.btn-block(type="submit") Trimite-ti
+

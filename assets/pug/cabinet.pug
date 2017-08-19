@@ -1,0 +1,78 @@
+extends layouts/inside
+block vars
+  - active__menu = 'Форум'
+block header
+  include inc/header2
+block main
+  main.cabinet-page
+    .container
+      form.validate-form
+        .card.cabinet
+          .card-header
+            .cabinet-user
+              .row
+                .col.sm-2
+                  .cabinet-user__image
+                    img(src="img/avatar.jpg", alt="")
+                    .edit
+                      input(type="file")#avatar
+                      label(for="avatar"): i.fa.fa-pencil
+                .col.sm-10
+                  .cabinet-user__row.accent
+                    input(type="text" value="Bauingenieur" required name="company")#company
+                    label(for="company") Название компании
+                  .cabinet-user__row
+                    input(type="text" value="Роман" required name="name")#name
+                    label(for="name") Контактное лицо
+                  .cabinet-user__row
+                    input(type="text" value="7 лет" required name="standing")#standing
+                    label(for="standing") Стаж
+                  .cabinet-user__row
+                    input(type="tel" value="062 058 887" required name="phone")#phone
+                    label(for="phone") Контактный телефон
+          .card-body
+            .cabinet-info
+              .cabinet-info__title Категории работ: 
+              .cabinet-info__content
+                p
+                  span Монтаж гипс-картона; 
+                  span Установка теплого пола в сан. узлах; 
+                  span Нанесение декоративной штукатурки; 
+                  span Перевозка материалов и вынос мусора; 
+                  span Поддержка в процессе выбора и покупки материалов
+                p: button.btn.btn-outline.popup-form(href="#categories") + Добавить категорию
+            .cabinet-info
+              .cabinet-info__title Описание: 
+              .cabinet-info__content
+                textarea#description(name="description", cols="30", rows="10") 
+                  | Опыт в качестве дипломированного инженера  2 года в Проектном Бюро "Statica cladirilor" (Statikbüro – Nüremberg), 5 лет в градостроительстве ( 11 жилых комплексов). 
+                  |  
+                  | Виды работ: 4 вида ремонта (косметический, капитальный, комфорт и премиум). 
+                  |   •   Теплоизоляция фасадов; 
+                  |   •   Планирование территории; 
+                  |   •   Системы гидро и тепло изоляции; 
+                  |   •   реконструкция и укрепление зданий.
+            .cabinet-info
+              .cabinet-info__title Примеры работ:
+              .cabinet-info__content
+                ul.portfolio
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=0", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=1", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=2", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=3", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=4", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=5", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=6", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=7", alt="")
+                  li: a(href=""): img(src="https://unsplash.it/100/100?image=8", alt="")
+                  li.edit
+                    input(type="file")#additem
+                    label(for="additem"): i.fa.fa-plus
+            .cabinet-info
+              .cabinet-info__title
+              .cabinet-info__content
+                button.btn.btn-main Сохранить
+
+
+
+

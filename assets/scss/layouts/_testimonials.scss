@@ -1,0 +1,90 @@
+.testimonials {
+  padding: 40px 0;
+
+
+  &-slider {
+    .owl-nav {
+      position: absolute;
+      bottom: 160px;
+      left: 50%;
+      width: 260px;
+      margin-left: -130px;
+
+      .owl-prev, .owl-next {
+        position: absolute;
+        top: 0;
+        transition: .3s ease-in-out;
+        display: inline-block;
+        font-family: 'FontAwesome';
+        width: 30px;
+        height: 30px;
+        background-color: $c_blue;
+        line-height: 30px;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $c_cyan;
+        }
+      }
+      .owl-prev {
+        left: 0;
+      }
+      .owl-next {
+        right: 0;
+      }
+    }
+
+    .owl-dots {
+      text-align: center;  
+      margin-bottom: 40px;
+      padding-top: 20px;
+
+      .owl-dot {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $c_light;
+        margin-left: 5px;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        &:hover, &.active {
+          opacity: .75;
+          background-color: $c_yellow;
+        }
+      }
+    }
+
+    &__item {
+      position: relative;
+      padding-bottom: 230px;
+      p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .author {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -75px;
+        width: 150px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+
+        img {
+          display: block;
+          border-radius: 100%; 
+          margin-bottom: 5px;
+          width: 150px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.counters {
+  background: url(../img/bg_counters.jpg) no-repeat center center fixed;
+  color: #ffffff;
+  padding: 60px 0;
+  font-size: 24px;
+  text-align: center;
+
+  .counter {
+    font-size: 56px;
+    font-weight: 900;
+    color: $c_yellow;
+  }
+}

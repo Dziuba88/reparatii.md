@@ -1,0 +1,20 @@
+// Header 
+header.header-default
+  .container
+    .navbar
+      .navbar-header
+        a(href="index.html").navbar-header__brand: img(src="img/logo.png", alt="")  
+        button.navbar__toggle: i.fa.fa-bars
+      .navbar-content
+        nav.navbar-content__left
+          ul
+            +item('Главная', 'index.html')
+            +item('Исполнители', 'executors.html')
+            +item('Форум', 'forum.html')
+        nav.navbar-content__right
+          a(href="cabinet.html").navbar-user
+            img(src="img/avatar.jpg", alt="").navbar-user__avatar
+            span.navbar-user__name Константин Константинопольский
+          button.btn.btn-main Выйти
+          button.btn.btn-lang RU
+// End Header 
