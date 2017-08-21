@@ -27,7 +27,13 @@
             <nav class="navbar-content__right">
               <button class="btn btn-main popup-form" href="#login">Войти</button>
               <button class="btn btn-main popup-form" href="#registration">Регистрация</button>
-              <button class="btn btn-lang">RU</button>
+              <div class="dropdown">
+                <button class="btn btn-lang" data-toggle="dropdown">RU</button>
+                <ul class="dropdown-menu">
+                  <li class="active"><a href="">Русский</a></li>
+                  <li><a href="">Română</a></li>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
@@ -227,64 +233,40 @@
                 <h2>Să achiti mai mult, după semnarea contractului</h2>
                 <p>Ca regulă, după semnarea contractului și în procesul de reparatie, costul final crește de mai multe ori, formând o gaură în bugetul dumneavoastră.</p>
               </div>
-            </div>
-            <div class="col sm-6">
-              <div class="pluses-list__item"><img src="img/plus.png" alt="">
-                <h2>Nu sunt costuri suplimentare!</h2>
-                <p>Cu noi nu trebuie să plătiti mai mult decât este scris în estimare. Noi pretuim onestitate în relatiile cu clientii noștri.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col sm-6">
               <div class="pluses-list__item"><img src="img/minus.png" alt="">
                 <h2>Amânarea dării in exploatarea a obiectului</h2>
                 <p>Una dintre cele mai frecvente probleme cu care se confruntă majoritatea clientilor - întârziere finalizării obiectului.</p>
               </div>
-            </div>
-            <div class="col sm-6">
-              <div class="pluses-list__item"><img src="img/plus.png" alt="">
-                <h2>Vă garantăm 100% respectarea termenilor</h2>
-                <p>Noi apreciem timpul Dvs, așa ca garantăm 100% respectarea termenilor.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col sm-6">
               <div class="pluses-list__item"><img src="img/minus.png" alt="">
                 <h2>Calitatea proastă a lucrărilor</h2>
                 <p>Pentru a face economii pe salariile angajatilor, multe companii atrag muncitori necalificati. Acest lucru afectează în mod direct calitatea muncii efectuate.</p>
               </div>
-            </div>
-            <div class="col sm-6">
-              <div class="pluses-list__item"><img src="img/plus.png" alt="">
-                <h2>Specialiști cu experientă de peste 5 ani</h2>
-                <p>În compania noastră lucrează specialiști cu experienta de peste 5 ani. Vă garantăm calitatea serviciilor.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col sm-6">
               <div class="pluses-list__item"><img src="img/minus.png" alt="">
                 <h2>E prea scump!</h2>
                 <p>Multe companii manipulează preturile din cauza ne-informării clientilor, exagerând preturile reale.</p>
               </div>
-            </div>
-            <div class="col sm-6">
-              <div class="pluses-list__item"><img src="img/plus.png" alt="">
-                <h2>Preturile noastre sunt transparente</h2>
-                <p>Avem parteneriate și reduceri de la companii de aceea avem preturi mai mici la materiale.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col sm-6">
               <div class="pluses-list__item"><img src="img/minus.png" alt="">
                 <h2>Cer avans și apoi dispar</h2>
                 <p>De multe ori se întâlnesc cazuri cînd companiile iau avans și dispar.</p>
               </div>
             </div>
             <div class="col sm-6">
+              <div class="pluses-list__item"><img src="img/plus.png" alt="">
+                <h2>Nu sunt costuri suplimentare!</h2>
+                <p>Cu noi nu trebuie să plătiti mai mult decât este scris în estimare. Noi pretuim onestitate în relatiile cu clientii noștri.</p>
+              </div>
+              <div class="pluses-list__item"><img src="img/plus.png" alt="">
+                <h2>Vă garantăm 100% respectarea termenilor</h2>
+                <p>Noi apreciem timpul Dvs, așa ca garantăm 100% respectarea termenilor.</p>
+              </div>
+              <div class="pluses-list__item"><img src="img/plus.png" alt="">
+                <h2>Specialiști cu experientă de peste 5 ani</h2>
+                <p>În compania noastră lucrează specialiști cu experienta de peste 5 ani. Vă garantăm calitatea serviciilor.</p>
+              </div>
+              <div class="pluses-list__item"><img src="img/plus.png" alt="">
+                <h2>Preturile noastre sunt transparente</h2>
+                <p>Avem parteneriate și reduceri de la companii de aceea avem preturi mai mici la materiale.</p>
+              </div>
               <div class="pluses-list__item"><img src="img/plus.png" alt="">
                 <h2>Oferim 2 ani garantie</h2>
                 <p>Noi vă oferim garantie pînă la 2 ani la toate lucrările efectuate.</p>
@@ -437,7 +419,7 @@
                 <div class="step__thumb"><small>03</small><img src="img/smeta.png" alt=""></div>
                 <div class="step__text">
                   <h3>Estimare și contract</h3>
-                  <p>Lăsati o cerere pe site-ul nostru, iar specialistul nostru vă va contacta în termen de 1 zi lucrătoare, cu scopul de a clarifica detaliile și a stabili o întâlnire.</p>
+                  <p>Pe baza măsurătorilor și  discuției cu clientul, facem estimări ale lucrărilor, afirmăm cu Dvs și semnăm toate actele necesare.</p>
                 </div>
               </div>
               <div class="step" data-aos="fade-zoom-in">
@@ -605,6 +587,42 @@
           <div class="checkbox">
             <input type="checkbox" id="cat-1">
             <label for="cat-1">Гарантия на выполненные работы – 3 года</label>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="checkbox">
+            <input type="checkbox" id="cat-2">
+            <label for="cat-2">Гарантия на выполненные работы – 3 года Гарантия на выполненные работы – 3 года Гарантия на выполненные работы – 3 года</label>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="checkbox">
+            <input type="checkbox" id="cat-3">
+            <label for="cat-3">Гарантия на выполненные работы – 3 года</label>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="checkbox">
+            <input type="checkbox" id="cat-4">
+            <label for="cat-4">Гарантия на выполненные работы – 3 года</label>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="checkbox">
+            <input type="checkbox" id="cat-5">
+            <label for="cat-5">Гарантия на выполненные работы – 3 года</label>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="checkbox">
+            <input type="checkbox" id="cat-6">
+            <label for="cat-6">Гарантия на выполненные работы – 3 года</label>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="checkbox last">
+            <input type="checkbox" id="cat-7">
+            <label for="cat-7">Гарантия на выполненные работы – 3 года</label>
           </div>
         </div>
         <div class="input-row">

@@ -12,11 +12,11 @@
         transition: .3s ease-in-out;
         display: inline-block;
         font-family: 'FontAwesome';
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         background-color: $c_blue;
         margin: 0 0 0 5px;
-        line-height: 30px;
+        line-height: 40px;
         font-size: 16px;
         text-align: center;
         color: #fff;
@@ -31,31 +31,32 @@
     .owl-dots {
       position: absolute;
       right: 15px;
-      bottom: 33px;
+      bottom: 38px;
 
       .owl-dot {
         display: inline-block;
         width: 15px;
         height: 15px;
         border-radius: 100%;
-        background-color: #fff;
+        background-color: #959595;
         margin-left: 5px;
         cursor: pointer;
         transition: .3s ease-in-out;
 
         &:hover, &.active {
-          opacity: .75;
+          background-color: #fff;
         }
       }
     }
 
     &__item {
       &-header {
-        margin-bottom: 10px;
         font-size: 30px;
         color: $c_light;
         line-height: 30px;
-        height: 30px;
+        height: 40px;
+        padding: 5px 0;
+        margin-bottom: 30px;
       }
 
       &-body {
@@ -65,9 +66,9 @@
       &-footer {
 
         h4 {
-          background-color: $c_cyan;
+          background-color: #54B6D1;
           margin: 0;
-          padding: 0 15px;
+          padding: 5px 15px;
           line-height: 30px;
           font-weight: 300;
           color: #fff;
@@ -76,7 +77,7 @@
 
         p {
           color: $c_light;
-          font-size: 16px;
+          font-size: 14px;
           margin: 0;
           padding: 0;
           line-height: 20px;

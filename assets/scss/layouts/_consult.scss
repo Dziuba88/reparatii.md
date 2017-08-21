@@ -1,6 +1,6 @@
 .consult {
   padding: 0 0 40px;
-  background: url(../img/bg_consult.jpg) no-repeat center center fixed;
+  background: url(../img/bg_consult.jpg) no-repeat center center;
   background-size: cover;
 
   &-form {
@@ -48,4 +48,11 @@
   background-size: cover;
   text-align: center;
   
+  .btn {
+    animation-name: hvr-pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+  }
 }

@@ -16,5 +16,9 @@ header.header-default
             img(src="img/avatar.jpg", alt="").navbar-user__avatar
             span.navbar-user__name Константин Константинопольский
           button.btn.btn-main Выйти
-          button.btn.btn-lang RU
+          .dropdown
+            button.btn.btn-lang(data-toggle="dropdown") RU
+            ul.dropdown-menu
+              li.active: a(href="") Русский
+              li: a(href="") Română
 // End Header 

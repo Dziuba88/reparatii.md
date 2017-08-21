@@ -3,9 +3,10 @@ body {
   font-size: 14px;
   font-weight: 300;
   color: $c_dark;
+  overflow-x: hidden !important;
 
   &.inside-page {
-    background: #eef4f4 url(../img/bg_inside.jpg) no-repeat center 300px;
+    background: #eef4f4;
     border-top: 4px solid $c_blue;  
   }
   
@@ -48,14 +49,14 @@ a, button {
   border: none;
   border-radius: 5px;
   transition: .3s ease-in-out;
-  transform: perspective(1px) translateZ(0);
+  //transform: perspective(1px) translateZ(0);
 
-  &:hover {
+  /*&:hover {
         animation-name: buzz-out;
         animation-duration: 0.75s;
         animation-timing-function: linear;
         animation-iteration-count: 1;
-  }
+  }*/
 
   &-block {
     width: 100%;
@@ -314,6 +315,13 @@ nav {
     }
   }
 }
+@media #{$tablet-down} {
+  .section-header, .section-header2, .section-header3 {
+    small {
+      font-size: 36px;
+    } 
+  }
+}
 
 @media #{$mobile-screen} {
   .section-header, .section-header2, .section-header3 {
@@ -322,7 +330,7 @@ nav {
     padding-bottom: 0;
 
     small {
-      font-size: 24px;
+      font-size: 36px;
     } 
   }
 

@@ -25,6 +25,54 @@
       .btn {
         margin-left: 15px;
       }
+
+      .dropdown {
+        display: inline-block;
+        position: relative;
+
+        &-menu {
+          position: absolute;
+          right: 0;
+          top: 100%;
+          background-color: #fff;
+          box-shadow: 0 3px 3px rgba($c_dark,.2);
+          opacity: 0;
+          transform: scaleY(0);
+          transform-origin: top;
+          transition: $transition;
+          margin-top: 5px;
+          border: 1px solid #eee;
+          li {
+            
+            a {
+              display: block;
+              padding: 10px 15px;
+              color: $c_dark;
+              text-decoration: none;
+            }
+
+            a:hover {
+              color: #fff;
+              background-color: $c_dark;
+            }
+
+            &.active a {
+              color: $c_dark;
+              background-color: $c_yellow;
+            }
+          }
+        }
+
+        &.open {
+          .btn-lang {
+            @extend .btn-lang:hover;
+          }
+          .dropdown-menu {
+            opacity: 1;
+            transform: scaleY(1);
+          }
+        }
+      }
     }
     &__left {
       flex: 1;

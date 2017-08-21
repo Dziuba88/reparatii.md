@@ -9,6 +9,8 @@
       position: relative;
       padding-left: 80px;
       margin-bottom: 40px;
+      padding-right: 40px;
+      min-height: 150px;
 
       &:before {
         content: '';
@@ -42,4 +44,11 @@
       }
     }
   }
+}
+@media #{$tablet-down} {
+.pluses-list__item {padding-right: 0px;min-height: 210px;}
+}
+
+@media #{$mobile-screen} {
+  .pluses-list__item {padding-right: 0px;min-height: 0;}
 }
