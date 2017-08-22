@@ -1,7 +1,12 @@
 .consult {
   padding: 0 0 40px;
-  background: url(../img/bg_consult.jpg) no-repeat center center;
-  background-size: cover;
+  background-image: 
+    url(../img/bg_consult-1.png),
+    url(../img/bg_consult-2.png),
+    url(../img/bg_consult.jpg);
+  background-position: top center, bottom center, center center;
+  background-repeat: no-repeat;
+  background-size: auto, auto, cover;
 
   &-form {
     .formfield {

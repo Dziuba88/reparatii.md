@@ -13,7 +13,8 @@ $(document).ready(function() {
 
   $('.testimonials-slider').owlCarousel({
     items:1,
-    //animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
     autoHeight: true,
     loop: true,
     margin: 0,
@@ -78,7 +79,11 @@ $(document).ready(function() {
 		closeBtnInside: true,
 		preloader: false,
 		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in'
+    mainClass: 'my-mfp-zoom-in',
+    callbacks: {
+      open: function() {$('.footer-fixed').css('right', '17px');},
+      close: function() {$('.footer-fixed').css('right', '');}
+    }
   });
   
   $('.popup-gallery').each(function() {

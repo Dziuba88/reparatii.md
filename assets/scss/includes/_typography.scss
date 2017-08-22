@@ -203,14 +203,13 @@ nav {
   font-size: 58px;
   line-height: 1;
   margin: 0 0 60px;
-  color: $c_dark;
   padding: 60px 0;
 
   span {
     display: inline-block;
-    background-color: #fff;
-    padding: 5px 10px;
-    margin-bottom: 5px;
+    color: #fff;
+
+    &:first-child {display: block;}
   }
 
   small {
@@ -218,7 +217,7 @@ nav {
     text-transform: none;
     font-weight: 400;
     font-size: 42px;
-    background-color: #fff;
+    color: #fff;
     padding: 0 10px 5px;
   }
 }
@@ -232,12 +231,23 @@ nav {
   margin: 0 0 60px;
   color: $c_dark;
   padding: 60px 0;
+  position: relative; 
+
+  &:before {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 40px;
+    width: 30px;
+    height: 8px;
+    background-color: $c_blue;
+    content: '';
+    margin-left: -15px;
+  }
+
 
   span {
     display: inline-block;
-    background-color: #fff;
-    padding: 5px 10px;
-    margin-bottom: 5px;
 
     &.light {
       display: block;
@@ -253,7 +263,6 @@ nav {
     text-transform: none;
     font-weight: 400;
     font-size: 42px;
-    background-color: #fff;
     padding: 0 10px 5px;
   }
 }

@@ -10,29 +10,31 @@
     text-align: center;
     line-height: 1;
     background: url(../img/bg_title-fp.png) no-repeat center bottom;
-    padding: 170px 0 115px;
+    background-size: 442px 418px;
+    padding: 170px 0 100px;
 
     span {
       display: inline-block;
       background-color: $c_yellow;
-      padding: 0px .5em 5px;
+      padding: 0px 10px 0px;
       margin-bottom: 5px;
     }
   }
 
   &-main {
-    font-size: 64px;
-    font-weight: 900;
+    font-size: 68px;
+    font-weight: 600;
   }
 
   &-desc {
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   &-slogan {
-    font-size: 40px;
+    font-size: 31px;
     font-weight: 300;
+    padding: 0 30px !important;
   }
 
   .scroll-link {
