@@ -203,13 +203,13 @@ nav {
   font-size: 56px;
   line-height: 1;
   margin: 0 0 60px;
-  padding: 60px 0;
+  padding: 70px 0 80px;
 
   span {
     display: inline-block;
     color: #fff;
 
-    &:first-child {display: block;}
+    &:first-child {display: block;margin-bottom: 10px;}
   }
 
   small {
@@ -218,7 +218,7 @@ nav {
     font-weight: 400;
     font-size: 42px;
     color: #fff;
-    padding: 0 10px 5px;
+    padding: 0 10px;
   }
 }
 .section-header3 {
@@ -230,14 +230,14 @@ nav {
   line-height: 1;
   margin: 0 0 60px;
   color: $c_dark;
-  padding: 80px 0 60px;
+  padding: 60px 0 60px;
   position: relative; 
 
   &:before {
     position: absolute;
     display: block;
     left: 50%;
-    top: 40px;
+    top: 30px;
     width: 30px;
     height: 8px;
     background-color: $c_blue;
@@ -253,7 +253,8 @@ nav {
       display: block;
       background-color: transparent;
       text-transform: none;
-      font-size: 42px;
+      font-size: 36px;
+      line-height: 1; 
       font-weight: 400;
     }
   }
@@ -262,8 +263,8 @@ nav {
     display: inline-block;
     text-transform: none;
     font-weight: 400;
-    font-size: 42px;
-    padding: 0 10px 5px;
+    font-size: 32px;
+    padding: 0 10px 0;
   }
 }
 
