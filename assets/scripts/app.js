@@ -118,6 +118,10 @@ $(document).ready(function() {
 			duration: 300 // don't foget to change the duration also in CSS
 		}
 	});
+
+  $(".cabinet-info__content .portfolio .delete").click(function() {
+    $(this).parent('li').hide(350);
+  });
 });
 
 

@@ -157,6 +157,36 @@
         li {
           padding: 0 5px;
           margin-bottom: 10px;
+          position: relative;
+
+          .delete {
+            position: absolute;
+            right: 5px;
+            top: 0;
+            padding: 5px;
+            background-color: rgba(#fff, .9);
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 12px;
+            color: $c_dark;
+            cursor: pointer;
+            transition: $transition;
+            opacity: 0;
+
+            &:hover {
+              color: #c33;
+            }
+            
+            .fa {
+              display: block;
+            }
+          }
+
+          &:hover .delete {
+            opacity: 1;
+          }
 
           a {
             opacity: 1;

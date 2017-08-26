@@ -55,16 +55,11 @@ block main
             .cabinet-info
               .cabinet-info__title Примеры работ:
               .cabinet-info__content
-                ul.portfolio
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=0", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=1", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=2", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=3", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=4", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=5", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=6", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=7", alt="")
-                  li: a(href=""): img(src="https://unsplash.it/100/100?image=8", alt="")
+                ul.portfolio.popup-gallery
+                  - for (var i=1; i<=9; i++)
+                    li
+                      a(href="https://unsplash.it/1000/1000?image="+i): img(src="https://unsplash.it/100/100?image="+i, alt="")
+                      span.delete: i.fa.fa-times
                   li.edit
                     input(type="file")#additem
                     label(for="additem"): i.fa.fa-plus
