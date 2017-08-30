@@ -78,8 +78,15 @@
 
       }
 
-      input {
+      span {
+        display: block;
         order: 2;
+        width: 100%;
+
+        &.field-error input {border: 1px solid #c33;}
+      }
+
+      input {
         height: 40px;
         border-radius: 5px;
         padding: 0 15px;
@@ -229,7 +236,14 @@
   }
 
 }
-
+.cabinet-user_form {
+  label.error-holder {
+    display: block;
+    margin: -20px 0 20px;
+    color: #c33;
+    padding-left: 240px;
+  }
+}
 @media #{$mobile-screen} {
   .cabinet-user__image img {margin-bottom: 30px;}
   .cabinet-user__row {

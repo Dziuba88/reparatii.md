@@ -6,7 +6,7 @@ block header
 block main
   main.cabinet-page
     .container
-      form.validate-form
+      form.cabinet-user_form
         .card.cabinet
           .card-header
             .cabinet-user
@@ -19,16 +19,16 @@ block main
                       label(for="avatar"): i.fa.fa-pencil
                 .col.sm-10
                   .cabinet-user__row.accent
-                    input(type="text" value="Bauingenieur" required name="company")#company
+                    span: input(type="text" value="Bauingenieur" required name="company")#company
                     label(for="company") Название компании
                   .cabinet-user__row
-                    input(type="text" value="Роман" required name="name")#name
+                    span: input(type="text" value="Роман" name="name")#name
                     label(for="name") Контактное лицо
                   .cabinet-user__row
-                    input(type="text" value="7 лет" required name="standing")#standing
+                    span: input(type="text" value="7 лет" name="standing")#standing
                     label(for="standing") Стаж
                   .cabinet-user__row
-                    input(type="tel" value="062 058 887" required name="phone")#phone
+                    span: input(type="tel" value="062 058 887" required name="phone")#phone
                     label(for="phone") Контактный телефон
           .card-body
             .cabinet-info

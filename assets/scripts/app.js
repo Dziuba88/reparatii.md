@@ -36,9 +36,28 @@ $(document).ready(function() {
 
   $('.validate-form').each(function() {
     $(this).validate({
+      focusCleanup: true,
       focusInvalid: false,
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).parent().removeClass("field-error");
+      },
       errorPlacement: function(error, element) {{
         $( element ).parent().addClass("field-error");
+      }}
+    });
+  });
+  $.validator.messages.required = '* это поле обязательное для заполнения!';
+  $('.cabinet-user_form').each(function() {
+    $(this).validate({
+      errorClass: "error-holder",
+      focusCleanup: false,
+      focusInvalid: false,
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).parent().removeClass("field-error");
+      },
+      errorPlacement: function(error, element) {{
+        $( element ).parent().addClass("field-error");
+        error.insertAfter($( element ).parent().parent());
       }},
     });
   });
