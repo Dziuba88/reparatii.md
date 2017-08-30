@@ -242,6 +242,7 @@
     margin: -20px 0 20px;
     color: #c33;
     padding-left: 240px;
+    font-size: 14px;
   }
 }
 @media #{$mobile-screen} {
@@ -262,4 +263,6 @@
   .cabinet-info__title {
     margin-bottom: 10px;
   }
+
+  .cabinet-user_form label.error-holder {font-size: 12px;padding-left: 0;}
 }
