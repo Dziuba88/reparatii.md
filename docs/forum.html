@@ -43,7 +43,7 @@
     <main class="forum-page">
       <div class="forum-page__header">
         <div class="container">
-          <form class="form-validate">
+          <form class="validate-form" action="">
             <div class="row">
               <div class="col md-6 offset-md-3 sm-8 offset-sm-2">
                 <h1 class="forum-page__title"><span>Задать вопрос</span></h1>
@@ -62,13 +62,13 @@
                 </select>
               </div>
               <div class="col sm-6">
-                <input type="text" placeholder="Заголовок">
+                <input type="text" name="forum-message-subject" placeholder="Заголовок" required>
               </div>
               <div class="col sm-12">
-                <textarea placeholder="Вопрос" cols="30" rows="10"></textarea>
+                <textarea placeholder="Вопрос" name="forum-message" cols="30" rows="10" required></textarea>
               </div>
               <div class="col sm-4 offset-sm-4">
-                <button class="btn btn-main btn-block">Задать вопрос</button>
+                <button class="btn btn-main btn-block" type="submit">Задать вопрос</button>
               </div>
             </div>
           </form>

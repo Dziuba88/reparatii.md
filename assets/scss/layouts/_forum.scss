@@ -85,6 +85,21 @@
       font-weight: 900 !important;
     }
 
+    .field-error {
+      input, textarea {
+        color: #c33;
+        border-color: #c33;
+
+        &::-webkit-input-placeholder {color:#c33;}
+        &::-moz-placeholder {color:#c33;}
+        &:-moz-placeholder {color:#c33;}
+        &:-ms-input-placeholder {color:#c33;}
+
+
+
+      }
+    }
+
   }
 
 
@@ -287,13 +302,28 @@
     textarea {
       display: block;
       width: 100%;
-      border: none;
+      border: 1px solid #fff;
       resize: none;
       height: 150px;
       padding: 10px 15px;
       border-radius: 5px;
       margin-bottom: 30px;
     }
+    .field-error {
+      textarea {
+        color: #c33;
+        border-color: #c33;
+
+        &::-webkit-input-placeholder {color:#c33;}
+        &::-moz-placeholder {color:#c33;}
+        &:-moz-placeholder {color:#c33;}
+        &:-ms-input-placeholder {color:#c33;}
+
+
+
+      }
+    }
+    
 
     &__controls {
       text-align: right;

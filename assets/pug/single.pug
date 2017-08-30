@@ -79,8 +79,8 @@ block main
 
         .forum-item__response
           h1 Оставить ответ
-          form.forum-item__response-form(action="")
+          form.forum-item__response-form.validate-form(action="")
             a(href="").response-item__avatar: img(src="img/avatar.jpg", alt="")
-            textarea(name="", cols="30", rows="10")
+            span: textarea(cols="30", rows="10", required, name="response")
             .forum-item__response-form__controls
               button.btn.btn-main Ответить

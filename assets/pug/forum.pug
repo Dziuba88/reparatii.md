@@ -7,7 +7,7 @@ block main
   main.forum-page
     .forum-page__header
       .container
-        form.form-validate
+        form.validate-form(action="")
           .row
             .col.md-6.offset-md-3.sm-8.offset-sm-2
               h1.forum-page__title: span Задать вопрос
@@ -23,11 +23,11 @@ block main
                 option категория 8
                 option категория 9
             .col.sm-6
-              input(type="text" placeholder="Заголовок")
+              input(type="text", name="forum-message-subject", placeholder="Заголовок", required)
             .col.sm-12
-              textarea(placeholder="Вопрос", cols="30", rows="10")
+              textarea(placeholder="Вопрос", name="forum-message", cols="30", rows="10", required)
             .col.sm-4.offset-sm-4
-              button.btn.btn-main.btn-block Задать вопрос
+              button.btn.btn-main.btn-block(type="submit") Задать вопрос
     .forum-page__filter
       .container
         .row
