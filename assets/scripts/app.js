@@ -27,11 +27,10 @@ $(document).ready(function() {
 
 
   AOS.init({
-    offset: 200,
+    offset: 0,
     duration: 600,
     easing: 'ease-in-sine',
     delay: 100,
-    disable: 'mobile'
   });
 
   $('.validate-form').each(function() {
@@ -46,6 +45,7 @@ $(document).ready(function() {
       }}
     });
   });
+
   $.validator.messages.required = '* это поле обязательное для заполнения!';
   $('.cabinet-user_form').each(function() {
     $(this).validate({
@@ -106,6 +106,14 @@ $(document).ready(function() {
   });
   
   $('.popup-gallery').each(function() {
+        $.each( $(".popup-gallery li a img"),function(img_to_bg){
+          $(this).hide();
+          var cssValues = {
+            "background":"url(" + $(this).attr("src") + ") no-repeat center center scroll",
+            "background-size":"cover"
+          }
+          $(this).parent().css(cssValues)
+        });
     $(this).magnificPopup({
       delegate: 'a',
       type: 'image',
@@ -141,6 +149,19 @@ $(document).ready(function() {
   $(".cabinet-info__content .portfolio .delete").click(function() {
     $(this).parent('li').hide(350);
   });
+
+  $.each( $(".cabinet-user__image img"),function(img_to_bg){
+    var cssValues = {
+      "background":"url(" + $(this).attr("src") + ") no-repeat center center scroll",
+      "background-size":"cover"
+    }
+    $(this).parent().css(cssValues)
+  });
+
+
+
+
+
 });
 
 

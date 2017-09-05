@@ -10,11 +10,15 @@
 
     &__image {
       position: relative;
+      width: 100%;
+      box-sizing: content-box;
+      padding-bottom: 100%;
+      border-radius: 100%;
+      margin-bottom: 20px;
+
 
       img {
-        display: block;
-        width: 100%;
-        border-radius: 100%;
+        display: none;
       }
 
       .edit {
@@ -166,6 +170,8 @@
           margin-bottom: 10px;
           position: relative;
 
+          a {display: block;width: 100px;height: 100px;}
+
           .delete {
             position: absolute;
             right: 5px;
@@ -265,4 +271,5 @@
   }
 
   .cabinet-user_form label.error-holder {font-size: 12px;padding-left: 0;}
+  .cabinet-info__content .portfolio li .delete {opacity: 1 !important;}
 }

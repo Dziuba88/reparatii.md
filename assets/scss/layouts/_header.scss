@@ -16,6 +16,20 @@
     margin-right: 50px;
   }
 
+  &__tel {
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    line-height: 20px;
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: $c_cyan;
+  
+  }
+
   &-content {
     flex: 1;
     display: flex;
@@ -137,6 +151,8 @@
   .navbar {
     position: relative;
 
+    &__tel {display: block;}
+
     &-header {
       margin-right: 0;
       width: 100%;
@@ -190,10 +206,8 @@
         color: $c_dark;
       }
     }
-
-    &-user__name {
-      display: none;
-    }
+    &-user {margin-bottom: 20px;}
+    &-user__name {text-align: left;}
     
     
   }
