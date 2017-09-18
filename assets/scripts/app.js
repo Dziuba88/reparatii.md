@@ -131,6 +131,24 @@ $(document).ready(function() {
     });
   });
 
+  $('.services-list__item--slider').each(function() {
+    $(this).magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      closeOnContentClick: true,
+      closeBtnInside: false,
+      fixedContentPos: true,
+      mainClass: 'mfp-img-mobile mfp-with-zoom',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+      },
+      image: {
+        verticalFit: true
+      }
+    });
+  });
+
 	$('.popup-image').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
